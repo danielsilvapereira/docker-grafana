@@ -1,0 +1,8 @@
+  grafana:
+    image:  grafana/grafana:11.1.0
+    user: "0"
+    restart: unless-stopped
+    ports:
+     - 3000:3000
+    volumes:
+      - ./grafana/dados:/var/lib/grafana
